@@ -1,0 +1,51 @@
+.project-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.project-image {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ 
+.more-options {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.project-title {
+  font-weight: 700;
+  font-size: 16px;
+  color: #000;
+}
+
+.project-author {
+  color: #555;
+  margin-bottom: 14px;
+}
+
+.project-stats {
+  display: flex;
+  gap: 8px;
+}
+
+.project-date {
+  font-size: 12px;
+  color: #000;
+}
+
+.project-stats span{
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+}

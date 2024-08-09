@@ -1,0 +1,16 @@
+.filter {
+  max-width: 248px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px; 
+  padding: 16px;
+  background-color: #fff;
+}
+
+.filter h2 {
+	font-weight: 700;
+	font-size: 16px;
+	margin-bottom: 24px;
+}
+
+
+
