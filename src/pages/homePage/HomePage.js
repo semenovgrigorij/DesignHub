@@ -1,10 +1,11 @@
-import Banner from "../../Components/banner/Banner"
-import Filter from "../../Components/filter/Filter"
-import Header from "../../Components/header/Header"
-import ProjectList from "../../Components/projectList/ProjectsList"
+import Banner from "../../сomponents/banner/Banner"
+import Filter from "../../сomponents/filter/Filter"
+import Header from "../../сomponents/header/Header"
+import ProjectList from "../../сomponents/projectList/ProjectsList"
 
 import projectImgOne from '../../img/project_one.jpg'
 import projectImgTwo from '../../img/project_two.jpg'
+import filterIcon from '../../img/icon/filter_alt.svg'
 import './homePage.css'
 
 const HomePage = () => {
@@ -94,10 +95,20 @@ const HomePage = () => {
           <button className="tag"># Portraits</button>
           <button className="tag"># Architecture</button>
           <button className="tag"># Animals</button>
+          <button className="tag"># Animals</button>
+          <button className="tag"># Animals</button>
         </div>
-          <h2>New projects</h2>
+
+					<div className="projects-top">
+						<h2>New projects</h2>
+						<img src={filterIcon} alt="filter icon" />
+					</div>
+          
           <ProjectList projects={projects} />
-          <h2 style={{marginTop: '56px'}}>Top projects</h2>
+					<div className="projects-top">
+						<h2>New projects</h2>
+						<img src={filterIcon} alt="filter icon" />
+					</div>
           <ProjectList projects={projects} />
         </section>
 			</main>

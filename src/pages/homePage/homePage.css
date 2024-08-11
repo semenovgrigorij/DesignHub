@@ -15,7 +15,7 @@ section h2 {
 	font-size: 32px;
 	color: #000;
 	line-height: 100%;
-	margin-bottom: 24px;
+	
 }
 
 .actions {
@@ -39,25 +39,37 @@ section h2 {
 	text-align: left;
 }
 
+.projects-top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 24px;
+}
+
 .tags {
   display: flex;
-  flex-wrap: wrap;
   gap: 10px;
   margin-bottom: 33px;
+  white-space: nowrap;
+	overflow-x: auto;
 }
 
 .tag {
-	display: flex;
+	display: inline-flex; 
 	align-items: center;
 	border: 1px solid #ddd;
 	border-radius: 4px;
 	padding: 12px 24px;
   cursor: pointer;
 	max-height: 35px;
-  transition: background-color 0.3s;
 	background-color: #fff;
+  transition: background-color 0.3s;
 }
 
 .tag:hover {
   background-color: #efefef;
+}
+
+.tags::-webkit-scrollbar {
+  display: none;
 }

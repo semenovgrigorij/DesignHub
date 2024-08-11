@@ -5,7 +5,10 @@ import FilterSection from '../filterSection/FilterSection'
 const Filter = () => {
   return (
     <div className="filter">
+      <div className="filter-header">
         <h2>Filter</h2>
+        <button>Clear Search</button>
+      </div>
         <FilterSection title="By content type">
           <label>
             <input type="checkbox" className="styled-checkbox" />
