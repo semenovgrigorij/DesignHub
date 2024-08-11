@@ -105,8 +105,8 @@ const HomePage = () => {
 					</div>
           
           <ProjectList projects={projects} />
-					<div className="projects-top">
-						<h2>New projects</h2>
+					<div className="projects-top" style={{marginTop: "56px"}}> 
+						<h2>Top projects</h2>
 						<img src={filterIcon} alt="filter icon" />
 					</div>
           <ProjectList projects={projects} />
