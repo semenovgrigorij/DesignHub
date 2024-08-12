@@ -66,54 +66,40 @@ const HomePage = () => {
 			image: projectImgTwo
 		},
 		
-		
-		
 	]
 		
 	return (
 		<div>
 			<Header/>
 			<Banner/>
-			<div className="container">
-			<div className="actions" >
-					<button className="action-button">Filter Images</button>
-					<button className="action-button">Sort Images</button>
-        </div>
+
 
 			<main>
-				<aside>
+			<div className="container container-flex">
+				<aside style={{marginTop:'22px'}}>
 					<Filter />
 				</aside>
 
-				<section>
-				<div className="tags">
-          <button className="tag"># Landscapes</button>
-          <button className="tag"># Landscapes</button>
-          <button className="tag"># Foto</button>
-          <button className="tag"># Landscapes</button>
-          <button className="tag"># Architecture</button>
-          <button className="tag"># Portraits</button>
-          <button className="tag"># Architecture</button>
-          <button className="tag"># Animals</button>
-          <button className="tag"># Animals</button>
-          <button className="tag"># Animals</button>
+				<section style={{marginTop:'22px'}}>
+					<div className="section-top">
+					<div className="tags">
+						<button className="tag"># Landscapes</button>
+						<button className="tag"># Foto</button>
+						<button className="tag"># Landscapes</button>
+						<button className="tag"># Architecture</button>
         </div>
+						<button className="action-button">Sort Images</button>
+					</div>
 
-					<div className="projects-top">
+
 						<h2>New projects</h2>
-						<img src={filterIcon} alt="filter icon" />
-					</div>
-          
           <ProjectList projects={projects} />
-					<div className="projects-top" style={{marginTop: "56px"}}> 
-						<h2>Top projects</h2>
-						<img src={filterIcon} alt="filter icon" />
-					</div>
+						<h2 style={{marginTop: '56px'}}>Top projects</h2>
           <ProjectList projects={projects} />
         </section>
+			</div>
 			</main>
 
-			</div>
 
 		</div>
 	)
