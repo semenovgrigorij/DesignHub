@@ -3,10 +3,6 @@
   flex-direction: column;
   border-radius: 4px;
   overflow: hidden;
-
-  &:hover .project-image{
-    transform: scale(1.1);
-  }
 }
 
 .project-image-container {
@@ -17,6 +13,10 @@
 .project-image {
   width: 100%;
   transition: transform 0.3s ease; 
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 .project-header {

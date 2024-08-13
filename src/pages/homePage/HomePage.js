@@ -5,7 +5,6 @@ import ProjectList from "../../сomponents/projectList/ProjectsList"
 
 import projectImgOne from '../../img/project_one.jpg'
 import projectImgTwo from '../../img/project_two.jpg'
-import filterIcon from '../../img/icon/filter_alt.svg'
 import './homePage.css'
 
 const HomePage = () => {
