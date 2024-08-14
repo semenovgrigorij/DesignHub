@@ -11,6 +11,10 @@ body, h1, h2, h3, h4, h5, h6, div, span, ol, ul, li, p {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 ol, ul {
 	list-style: none;
 }

@@ -1,43 +1,49 @@
-.container-flex {
-	display: flex;
+.home-page__container--flex {
+  display: flex;
 }
 
-aside {
+.home-page__aside {
   width: 20%;
+	margin-top: 22px;
 }
 
-section {
+.home-page__section {
   width: 80%;
+	margin-top: 22px;
 }
 
-.section-top {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	margin-bottom: 33px;
+.home-page__section-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 33px;
 }
 
-section h2 {
+.home-page__title {
   font-weight: 400;
-	font-size: 32px;
-	color: #000;
-	line-height: 100%;
-	margin-bottom: 24px;
+  font-size: 32px;
+  color: #000;
+  line-height: 100%;
+  margin-bottom: 24px;
 }
 
-.action-button {
-	display: flex;
-	align-items: center;
-	border: 1px solid #ddd;
-	border-radius: 51px;
-	padding: 16px 28px;
-	width: 248px;
-	height: 44px;
-	background-color: #efefef;
-	font-size: 16px;
-	color: #000;
-	text-align: left;
-	cursor: pointer;
+.sort-controls {
+  position: relative;
+}
+
+.sort-controls__button {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 51px;
+  padding: 16px 28px;
+  width: 248px;
+  height: 44px;
+  background-color: #efefef;
+  font-size: 16px;
+  color: #000;
+  text-align: left;
+  cursor: pointer;
 }
 
 .tags {
@@ -46,18 +52,18 @@ section h2 {
   white-space: nowrap;
 }
 
-.tag {
-	display: inline-flex; 
-	align-items: center;
-	border: 1px solid #ddd;
-	border-radius: 4px;
-	padding: 12px 24px;
+.tags__tag {
+  display: inline-flex; 
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 12px 24px;
   cursor: pointer;
-	max-height: 35px;
-	background-color: #fff;
+  max-height: 35px;
+  background-color: #fff;
   transition: background-color 0.3s;
 }
 
-.tag:hover {
+.tags__tag:hover {
   background-color: #efefef;
 }

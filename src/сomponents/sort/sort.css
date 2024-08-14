@@ -1,0 +1,40 @@
+.sort {
+	position: absolute;
+	top: 50px;
+	right: 0;
+	z-index: 3;
+  width: 100%;
+  border: 1px solid #e0e0e0;
+  padding: 16px;
+  background-color: #fff;
+	box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.25);
+	border-radius: 24px;
+	opacity: 0;
+	transform: translateX(100%);
+	transition: all 0.3s ease-in-out;
+}
+
+.sort.visible {
+	opacity: 1;
+	transform: translateX(0); 
+}
+
+.sort h2 {
+	font-weight: 700;
+	font-size: 16px;
+}
+
+.sort-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.sort-header button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+
